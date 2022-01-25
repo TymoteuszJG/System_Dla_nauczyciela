@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main_Screen">
+
+    <fragment
+        android:id="@+id/main_Screen"
+        android:name="com.example.nauczyciel.Main_Screen"
+        android:label="fragment_main__screen"
+        tools:layout="@layout/fragment_main__screen">
+        <action
+           android:id="@+id/Action_Main_To_Students"
+            app:destination="@id/students_All"/>
+        <action
+            android:id="@+id/Action_Main_To_Subjects"
+            app:destination="@id/subjects_All"/>
+        <action
+            android:id="@+id/Action_Main_To_Settings"
+            app:destination="@id/settings_Delete_Tables"/></fragment>
+    <fragment
+        android:id="@+id/students_All"
+        android:name="com.example.nauczyciel.Students_All"
+        android:label="fragment_students__all"
+        tools:layout="@layout/fragment_students__all">
+        <action
+        android:id="@+id/Action_Students_List_To_Add"
+        app:destination="@id/add_Student"/></fragment>
+    <fragment
+        android:id="@+id/add_Student"
+        android:name="com.example.nauczyciel.Add_Student"
+        android:label="fragment_add__student"
+        tools:layout="@layout/fragment_add__student" />
+    <fragment
+        android:id="@+id/settings_Delete_Tables"
+        android:name="com.example.nauczyciel.Settings_Delete_Tables"
+        android:label="fragment_settings__delete__tables"
+        tools:layout="@layout/fragment_settings__delete__tables" />
+    <fragment
+        android:id="@+id/subjects_All"
+        android:name="com.example.nauczyciel.Subjects_All"
+        android:label="fragment_subjects__all"
+        tools:layout="@layout/fragment_subjects__all" >
+        <action
+            android:id="@+id/Action_Subject_List_To_Add_Subject"
+            app:destination="@id/add_Subject"/>
+        <action
+            android:id="@+id/Action_Subject_List_To_Students_of_Subject"
+            app:destination="@id/students_Of_Subject"/></fragment>
+    <fragment
+        android:id="@+id/add_Subject"
+        android:name="com.example.nauczyciel.Add_Subject"
+        android:label="fragment_add__subject"
+        tools:layout="@layout/fragment_add__subject" />
+    <fragment
+        android:id="@+id/add_Student_To_Subject"
+        android:name="com.example.nauczyciel.Add_Student_To_Subject"
+        android:label="fragment_add__student__to__subject"
+        tools:layout="@layout/fragment_add__student__to__subject" />
+    <fragment
+        android:id="@+id/students_Of_Subject"
+        android:name="com.example.nauczyciel.Students_Of_Subject"
+        android:label="fragment_students__of__subject"
+        tools:layout="@layout/fragment_students__of__subject" >
+        <action android:id="@+id/Action_students_Of_Subject_to_add_students_to_subject"
+            app:destination="@id/add_Student_To_Subject"
+            />
+        <action android:id="@+id/Action_students_Of_Subject_to_marks_Of_Students"
+            app:destination="@id/marks_Of_Student"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/marks_Of_Student"
+        android:name="com.example.nauczyciel.Marks_Of_Student"
+        android:label="fragment_marks__of__student"
+        tools:layout="@layout/fragment_marks__of__student" >
+        <action android:id="@+id/Action_Marks_To_Add_Marks" app:destination="@+id/add_Mark"/>
+    </fragment>
+    <fragment
+        android:id="@+id/add_Mark"
+        android:name="com.example.nauczyciel.Add_Mark"
+        android:label="fragment_add__mark"
+        tools:layout="@layout/fragment_add__mark" />
+
+</navigation>

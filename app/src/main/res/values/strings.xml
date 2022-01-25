@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Nauczyciel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Go_To_Student_List">Go to list of all students</string>
+    <string name="Go_To_Subjects_List">Go to list of all subjects</string>
+    <string name="Go_To_Settings">Go to settings</string>
+    <string name="Go_To_Today_Subjects_List">Go to list of today subjects</string>
+    <string name="asd">Hello blank fragment</string>
+    <string name="Add_Mark">Add Mark</string>
+    <string name="Add_Subject">Add Subject</string>
+    <string name="Purge_Database">USUN BAZE DANYCH</string>
+    <string name="Go_to_Add_student">Go to Add Student</string>
+    <string name="Dodawanie_Studentów">Dodawanie Studentów</string>
+    <string name="Go_to_Add_Subject">Go to add subjects</string>
+    <string name="Hour_00">00:00</string>
+
+    <string-array name="Marks_Array">
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>5</item>
+
+    </string-array>
+
+    <string-array name="Day_Of_Week_Array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+</resources>
